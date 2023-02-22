@@ -3,7 +3,7 @@ import { Egreso } from "../models/Egreso.model";
 import { Ingreso } from "../models/Ingreso.model";
 export class DataService {
 
-    // ingresoEliminado = new EventEmitter<boolean>();
+    
     // egresoEliminado  = new EventEmitter<boolean>();
 
     // ARRAY DE INGRESOS
