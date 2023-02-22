@@ -9,10 +9,10 @@ import { Egreso } from './models/Egreso.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  titulo = 'ingreso-app';
+  
   constructor(private dataService:DataService){}
   arrayDeIngresosPadre:Ingreso[] = this.dataService.arrayIngresos;
-  arrayEgresos:Egreso[] = this.dataService.arrayEgresos;
+  arrayEgresosPadre:Egreso[] = this.dataService.arrayEgresos;
 
   ngOnInit(): void {
     // console.log(this.dataService.getEgresosTotales());

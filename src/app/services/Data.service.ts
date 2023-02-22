@@ -1,11 +1,12 @@
-import { EventEmitter } from "@angular/core";
+import { EventEmitter, Injectable } from "@angular/core";
 import { Egreso } from "../models/Egreso.model";
 import { Ingreso } from "../models/Ingreso.model";
+import { IngresoService } from "./Ingreso.service";
+import { EgresoService } from "./Egreso.service";
+@Injectable()
 export class DataService {
-
-    
     // egresoEliminado  = new EventEmitter<boolean>();
-
+  
     // ARRAY DE INGRESOS
     arrayIngresos: Ingreso[] = [
         new Ingreso('Venta gafas', 5000),
@@ -75,6 +76,9 @@ export class DataService {
 
     // ELIMINA UN ELEMENTO DEL ARRAY DE EGRESO
     eliminarEgreso(id: number) {
-
+        const index = this.arrayEgresos.findIndex(
+            (egreso: Egreso) => egreso.getId() === id
+        );
+        this.arrayEgresos.splice(index,1);
     }
 }

@@ -4,7 +4,7 @@ import { DataService } from "./Data.service";
 @Injectable()
 export class IngresoService {
     
-    ingresoEliminado = new EventEmitter<boolean>();
+    cambioEnIngresos = new EventEmitter<boolean>();
 
     constructor(private dataService: DataService) { }
 

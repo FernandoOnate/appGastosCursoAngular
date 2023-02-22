@@ -3,19 +3,19 @@
         <div class="presupuesto_titulo">
             Presupuesto disponible
         </div>
-        <div class="presupuesto_valor" id="presupuesto">{{this.dataService.darFormatoValores(presupuestoTotal)}}</div>
+        <div class="presupuesto_valor" id="presupuesto">{{presupuestoString}}</div>
         <div class="presupuesto_ingreso limpiarEstilos">
             <div class="presupuesto_ingreso--texto">Ingresos</div>
             <div class="derecha">
-                <div class="presupuesto_ingreso--valor" id="ingresos_totales"> {{this.dataService.darFormatoValores(ingresosTotales)}} </div>
+                <div class="presupuesto_ingreso--valor" id="ingresos_totales"> {{ingresosString}} </div>
                 <div class="presupuesto_ingreso--porcentaje">&nbsp;100%</div>
             </div>
         </div>
         <div class="presupuesto_egreso limpiarEstilos">
             <div class="presupuesto_egreso--texto">Egresos</div>
             <div class="derecha limpiarEstilos">
-                <div class="presupuesto_egreso--valor" id="egresos">{{this.dataService.darFormatoValores(egresosTotales)}}</div>
-                <div class="presupuesto_egreso--porcentaje" id="porcentaje">{{this.dataService.formatoPorcentajes(porcentajeEgresos)}}</div>
+                <div class="presupuesto_egreso--valor" id="egresos">{{egresosString}}</div>
+                <div class="presupuesto_egreso--porcentaje" id="porcentaje">{{porcentajeEgresos}}</div>
             </div>
         </div>
     </div>

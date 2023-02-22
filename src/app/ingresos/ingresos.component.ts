@@ -18,11 +18,11 @@ export class IngresosComponent implements OnInit{
     ){}
 
     ngOnInit(): void {
-      this.ingresoService.ingresoEliminado.emit(false);
+      this.ingresoService.cambioEnIngresos.emit(false);
     }
 
   eliminarIngreso(id:number){
       this.ingresoService.ingresoEliminar(id);
-      this.ingresoService.ingresoEliminado.emit(true);
+      this.ingresoService.cambioEnIngresos.emit(true);
   }
 }

@@ -8,6 +8,7 @@ import { IngresosComponent } from './ingresos/ingresos.component';
 import { EgresosComponent } from './egresos/egresos.component';
 import { DataService } from './services/Data.service';
 import { IngresoService } from './services/Ingreso.service';
+import { EgresoService } from './services/Egreso.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { IngresoService } from './services/Ingreso.service';
   imports: [
     BrowserModule
   ],
-  providers: [DataService,IngresoService],
+  providers: [DataService,IngresoService,EgresoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

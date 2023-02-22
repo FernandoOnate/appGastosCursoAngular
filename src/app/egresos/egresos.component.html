@@ -1,5 +1,19 @@
 <div class="egreso">
     <h2 class="egreso-titulo">Tus egresos:</h2>
     <div id="lista-egresos">
+        <div class="elemento limpiarEstilos" *ngFor="let egreso of arrayEgresos;let i = index">
+            <div class="elemento_descripcion">{{egreso.descripcion}}</div>
+                <div class="derecha limpiarEstilos">
+                    <div class="elemento_valor">- {{this.dataService.darFormatoValores(egreso.valor)}}</div>
+                    <div class="elemento_porcentaje">{{this.dataService.formatoPorcentajes(egreso.valor / this.dataService.getIngresosTotales())}}</div>
+                    <div class="elemento_eliminar">
+                        <button class="elemento_eliminar--btn">
+                            <!-- <ion-icon style="color:red;" name="trash-outline" onclick='eliminarEgreso(${egreso.id})'></ion-icon> -->
+                        <i class="bi bi-trash3" style="color:red;" (click)='eliminarEgreso(egreso.getId())'></i>
+                            
+                        </button>
+                    </div>
+                </div>
+        </div>
     </div>
 </div>
