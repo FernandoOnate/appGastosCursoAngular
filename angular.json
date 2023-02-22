@@ -26,6 +26,7 @@
             ],
             "styles": [
               "src/styles.css",
+              "src/estilos.css",
               "node_modules/fomantic-ui/dist/semantic.min.css",
               "node_modules/fomantic-ui/dist/semantic.min.css"
             ],
