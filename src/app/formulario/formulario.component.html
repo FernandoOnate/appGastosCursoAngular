@@ -1,0 +1,23 @@
+<form id="forma" onsubmit="return false;">
+    <div class="agregar">
+        <div class="agregar_contenedor">
+            <div class="ui action input" id="select_container">
+                <select id="tipo" class="agregar_tipo ui selection dropdown">
+                    <option value="0"selected>Qué quieres agregar?</option>
+                    <option value="ingreso">Un ingreso</option>
+                    <option value="egreso">Un gasto</option>
+                </select>
+            </div>
+            <span id="desc_input_cont" class="ui input">
+                <input type="text" class="agregar_descripcion" placeholder="Descripción" id="descripcion" />
+            </span>
+            <span id="val_input_cont" class="ui input">
+                <input type="number" name="" class="agregar_valor" placeholder="Monto" id="valor" step="any" />
+            </span>
+            <!-- step any es para poder agregar puntos decimales -->
+            <button class="agregar_btn" onclick="agregarDato()" title="Agregar">
+                +
+            </button>
+        </div>
+    </div>
+</form>
