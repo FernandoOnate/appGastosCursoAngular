@@ -12,9 +12,9 @@ export class IngresoService {
         const ingresoNuevo = new Ingreso(desc, val);
         this.dataService.arrayIngresos.push(ingresoNuevo);
     }
-    
+
     ingresoEliminar(id:number){
-        this.dataService.arrayIngresos.splice(id,1);
+        this.dataService.eliminarIngreso(id);
     }
     // arrayIngresosEvent = new EventEmitter<Ingreso[]>();
 
