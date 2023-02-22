@@ -1,11 +1,9 @@
 import { EventEmitter, Injectable } from "@angular/core";
 import { Egreso } from "../models/Egreso.model";
 import { Ingreso } from "../models/Ingreso.model";
-import { IngresoService } from "./Ingreso.service";
-import { EgresoService } from "./Egreso.service";
 @Injectable()
 export class DataService {
-    // egresoEliminado  = new EventEmitter<boolean>();
+    // formularioEnviado  = new EventEmitter<boolean>();
   
     // ARRAY DE INGRESOS
     arrayIngresos: Ingreso[] = [

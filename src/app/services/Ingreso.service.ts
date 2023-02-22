@@ -11,6 +11,7 @@ export class IngresoService {
     agregarIngreso(desc: string, val: number) {
         const ingresoNuevo = new Ingreso(desc, val);
         this.dataService.arrayIngresos.push(ingresoNuevo);
+        this.cambioEnIngresos.emit(true);
     }
 
     ingresoEliminar(id: number) {

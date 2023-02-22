@@ -1,5 +1,8 @@
 <app-cabecero></app-cabecero>
-<app-formulario></app-formulario>
+<app-formulario (errorFormularioDesc)="descError($event)"
+(errorFormularioTipo)="tipoError($event)"
+(errorFormularioVal)="valError($event)">
+</app-formulario>
 <!-- LISTADO DE INGRESOS Y EGRESOS -->
 <div class="contenedor limpiarEstilos">
     <app-ingresos [arrayIngresosHijo]="arrayDeIngresosPadre"></app-ingresos>
