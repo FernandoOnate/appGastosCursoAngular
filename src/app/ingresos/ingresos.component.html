@@ -1,5 +1,16 @@
 <div class="ingreso">
     <h2 class="ingreso_titulo">Tus ingresos:</h2>
     <div id="lista-ingresos">
+        <div class="elemento limpiarEstilos" *ngFor="let ing of arrayIngresosHijo; let i = index;">
+            <div class="elemento_descripcion">{{ing.descripcion}}</div>
+            <div class="derecha limpiarEstilos">
+                <div class="elemento_valor">+ {{this.dataService.darFormatoValores(ing.valor)}}</div>
+                <div class="elemento_eliminar">
+                    <button class="elemento_eliminar--btn">
+                        <i class="bi bi-trash3" style="color:red;" (click)='eliminarIngreso(ing.getId())'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

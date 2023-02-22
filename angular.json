@@ -28,13 +28,12 @@
               "src/styles.css",
               "src/estilos.css",
               "node_modules/fomantic-ui/dist/semantic.min.css",
-              "node_modules/fomantic-ui/dist/semantic.min.css"
+              "node_modules/fomantic-ui/dist/semantic.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/fomantic-ui/dist/semantic.min.js",
-              "node_modules/ionicons/dist/ionicons/ionicons.esm.js",
-              "node_modules/ionicons/dist/ionicons/ionicons.js"
+              "node_modules/fomantic-ui/dist/semantic.min.js"
             ]
           },
           "configurations": {
